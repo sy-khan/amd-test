@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link rel="shortcut icon" href="./favicon.ico">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70682651-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<style>
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+}
+p {
+     text-align: center;
+}
+</style>
+  <title>American Muslim ID Generator</title>
+</head>
+
+<body style="background-color:lightgrey">
+
+
+<nav id="nav01"></nav>
+
+  <h1>AMERICAN MUSLIM DATABASE</h1>
+  <h2><i>Why worry about civil liberties when you can have a database</i></h2>
+  <h3>Fill out the ID card below and get authorized!</h3>
+
+
+<script src="dropzone.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js"></script> 
+<script type="text/javascript" src="html2canvas.js"></script> 
+
+<div id="id_card">
+
+<div class="textpanel">
+    <img src="./id_card1.jpg"> 
+        <textarea id="name" style="border: none; color: black; background-color: transparent;">Your Name Here</textarea>
+        <textarea id="skin_tone" style="border: none; color: black; background-color: transparent;">Your SkinTone Here</textarea>
+        <textarea id="ethnicity" style="border: none; color: black; background-color: transparent;">Your Ethnicity Here</textarea>
+        <textarea id="sect" style="border: none; color: black; background-color: transparent;">Your Sect Here</textarea>
+
+        <form action="/file-upload"
+        class="dropzone"
+        id="photo"></form>
+
+</div>
+
+<div class="textpanel1">
+    <img src="https://41.media.tumblr.com/7c8ff5e36e77272160f221affba68de5/tumblr_nyc7ucM71O1r5iwjlo2_540.jpg"> 
+        <textarea id="stren1" style="border: none; color: black; background-color: transparent;">Strength1</textarea>
+        <textarea id="stren2" style="border: none; color: black; background-color: transparent;">Strength2</textarea>
+        <textarea id="stren3" style="border: none; color: black; background-color: transparent;">Strength3</textarea>
+        <textarea id="stren4" style="border: none; color: black; background-color: transparent;">Strength4</textarea>
+        <textarea id="weak1" style="border: none; color: black; background-color: transparent;">Weakness1</textarea>
+        <textarea id="weak2" style="border: none; color: black; background-color: transparent;">Weakness2</textarea>
+        <textarea id="weak3" style="border: none; color: black; background-color: transparent;">Weakness3</textarea>
+        <textarea id="weak4" style="border: none; color: black; background-color: transparent;">Weakness4</textarea>
+
+</div>
+
+<style>
+
+.textpanel {
+    position: relative;
+    display: inline-block; /* if you want this container to shrink-to-fit */
+}
+.textpanel img.display {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.textpanel textarea#name {
+    position: absolute;
+    top: 65px;
+    left: 277px;
+    height: 40px;
+    width: 200px;
+    font-size: 18pt;
+    font-family: Arial;
+}
+
+.textpanel textarea#skin_tone {
+    position: absolute;
+    top: 107px;
+    left: 320px;
+    height: 40px;
+    width: 230px;
+    font-size: 18pt;
+    font-family: Arial;
+}
+
+.textpanel textarea#ethnicity {
+    position: absolute;
+    top: 150px;
+    left: 310px;
+    height: 40px;
+    width: 230px;
+    font-size: 18pt;
+    font-family: Arial;
+}
+
+.textpanel textarea#sect {
+    position: absolute;
+    top: 190px;
+    left: 261px;
+    height: 40px;
+    width: 230px;
+    font-size: 18pt;
+    font-family: Arial;
+}
+
+.textpanel #photo {
+    position: absolute;
+    top: 62px;
+    left: 21px;
+    height: 40px;
+    width: 230px;
+    font-size: 8pt;
+    font-family: Arial;
+}
+
+.textpanel1 {
+    position: relative;
+    display: inline-block; /* if you want this container to shrink-to-fit */
+}
+.textpanel1 img.display {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.textpanel1 textarea#stren1 {
+    position: absolute;
+    top: 115px;
+    left: 50px;
+    height: 40px;
+    width: 200px;
+    font-size: 13pt;
+    font-family: Arial;
+    font-weight: bold;
+
+}
+
+.textpanel1 textarea#stren2 {
+    position: absolute;
+    top: 157px;
+    left: 50px;
+    height: 40px;
+    width: 230px;
+    font-size: 13pt;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.textpanel1 textarea#stren3 {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    height: 40px;
+    width: 230px;
+    font-size: 13pt;
+    font-family: Arial;
+    font-weight: bold;
+
+}
+
+.textpanel1 textarea#stren4 {
+    position: absolute;
+    top: 240px;
+    left: 50px;
+    height: 40px;
+    width: 230px;
+    font-size: 13pt;
+    font-family: Arial;
+    font-weight: bold;
+
+}
+
+.textpanel1 textarea#weak1 {
+    position: absolute;
+    top: 115px;
+    left: 322px;
+    height: 40px;
+    width: 200px;
+    font-size: 13pt;
+    font-family: Arial;
+    font-weight: bold;
+
+}
+
+.textpanel1 textarea#weak2 {
+    position: absolute;
+    top: 157px;
+    left: 322px;
+    height: 40px;
+    width: 230px;
+    font-size: 13pt;
+    font-family: Arial;
+    font-weight: bold;
+
+}
+
+.textpanel1 textarea#weak3 {
+    position: absolute;
+    top: 200px;
+    left: 322px;
+    height: 40px;
+    width: 230px;
+    font-size: 13pt;
+    font-family: Arial;
+    font-weight: bold;
+
+}
+
+.textpanel1 textarea#weak4 {
+    position: absolute;
+    top: 240px;
+    left: 322px;
+    height: 40px;
+    width: 230px;
+    font-size: 13pt;
+    font-family: Arial;
+    font-weight: bold;
+
+}
+</style>
+
+</div>
+
+<script type="text/javascript">
+function capture() {
+    var target = $('#id_card');
+    html2canvas(target, {
+        onrendered: function (canvas) {
+            //Set hidden field's value to image data (base-64 string)
+            // $('#img_val').val(canvas.toDataURL("image/png"));
+        var image = canvas.toDataURL();
+        window.open(image);
+        }
+    });
+}
+
+</script>
+
+<input type="button" value="Save Your ID" onclick="capture();" />
+
+
+<p>To save, take a screenshot and print in triplicate to ensure you always have a copy on your authorized person.</p>
+
+
+<p><i>Inspired by <a href="https://www.facebook.com/wajali/posts/10104015117863443">Wajahat Ali</a> and <a href="http://live.huffingtonpost.com/r/segment/free-speech-zone-caro-mt/50f5737902a76015c8000043">Huffington Post</a></i></p>
+
+<a href="https://twitter.com/share" class="twitter-share-button"{count} data-via="sy_khan">Tweet</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=http://sy-khan.github.io/amdatabase/" target="_blank">
+  Share on Facebook
+</a>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<div style="position: relative">
+    <p style="font-size: 11px; position: fixed; bottom: 0; width:100%; text-align: center"> The result of <a href="https://www.twitter.com/sy_khan">Sara's</a> procrastination.
+    </p>
+ </div>
+
+</body>
+</html>
